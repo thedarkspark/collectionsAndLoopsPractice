@@ -46,6 +46,76 @@ print (namesTwo)
 names.remove(at:2)
 print(names)
 
+//adding together two arrays
+var namesThree = names + namesTwo
+print (namesThree)
+
+
+//circle back and Study dictionaries from pg 172 to pg 175
+//for now lets move on to loops
+
+//Loops pg 178
+//for-in loop or for loop
+//range 1-5 and print each value without writing 5 print statements
+
+for index in 1...5 {
+    print (" This is number \(index)")
+}
+//index is the value assigned to the for-in loop
+
+//a series of steps without a value
+for _ in 1...3 {
+    print ("Hello")
+}
+
+//now lets use this in an array
+let group = ["Joe", "Cathy","Will"]
+for group in group {
+    print ("Hello \(group)")
+}
+
+//to return individual characters in a string
+for letter in "ABCD".characters {
+    print ("The letter is \(letter)")
+}
+
+//getting tricky now
+//if you need the index and value use the enumerated() method pg 180
+for (index, letter) in "ABCD".characters.enumerated() {
+    print ("\(index): \(letter)")
+}
+
+
+//using a for-in loop with a dictionary
+let vehicles = ["unicycle" : 1, "bicycle" : 2, "tricycle" : 3, "quad bike" : 4]
+for (vehicleName, wheelCount) in vehicles {
+    print ("A \(vehicleName) has \(wheelCount) wheels")
+}
+
+
+//now lets move on to while loops
+//while loops keep going until a condition is met
+//while loops are on pg 181
+//dont want to create a continous loop and crash xcode
+
+//moving right along
+//control transfer statements
+//break will break the code execution within the loop
+//loop breaks if the counter reaches 0
+
+for counter in -3...3 {
+    print (counter)
+    if counter == 0 {
+        break
+    }
+}
+
+
+
+
+
+
+
 
 
 
